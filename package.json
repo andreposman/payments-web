@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/andreposman/payments-web#readme",
   "dependencies": {
-    "surge": "^0.20.1"
+    "browserify": "^16.2.2",
+    "surge": "^0.20.1",
+    "tippy.js": "^2.5.3"
   }
 }

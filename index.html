@@ -10,6 +10,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
+    <link rel="stylesheet" href="css/estilo.css">
+
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,14 +25,12 @@
         <div id="menu" class="nav-wrapper grey darken-4">
             <div class="container">
                 <a href="#" class="brand-logo center">
-                    <img id="logo" src="img/foxbit-logo-min.png" alt="Foxbit">
+                    <img id="logo" src="img/png/foxbit-logo-min.png" alt="Foxbit">
                 </a>
-                <ul>
-                    <li id="janela-informativa">Sobre o aplicativo</li>
-                </ul>
             </div>
         </div>
     </nav>
+
     <!-- #endregion -->
 
     <!-- #region menu expansivel -->
@@ -49,9 +49,7 @@
                     </div>
                     <div class="divider"></div>
                     <div id="divBancos">
-
                         <div class="row center">
-
                             <div class="col s6">
                                 <span id="btnBra">
                                     <a id="btnBancos" class="waves-effect waves-light btn red darken-1">bradesco</a>
@@ -66,7 +64,6 @@
                         </div>
 
                         <div class="row center">
-
                             <div class="col s6">
                                 <span id="btnBB">
                                     <a id="btnBancos" class="waves-effect waves-light btn yellow darken-2">
@@ -79,7 +76,18 @@
                                         Inter</a>
                                 </span>
                             </div>
+
                         </div>
+
+                        <div class="row center">
+                            <div class="col s6">
+                                <span id="btnOriginal">
+                                    <a id="btnBancos" class="waves-effect waves-light btn" style="background-color: #18ad47">
+                                        Original</a>
+                                </span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </li>
@@ -97,10 +105,12 @@
             <!-- #region mini-macros -->
             <li>
                 <div class="collapsible-header flow-text">
-                    <i id="icones-menu-expansivel" class="material-icons">comment</i>Mini Macros</div>
+                    <i id="icones-menu-expansivel" class="material-icons">comment</i>Mini Macros
+                </div>
                 <div class="collapsible-body center">
                     <a id="btnMacro" class="waves-effect waves-light btn grey darken-4">
                         <i class="material-icons left">border_color</i>Mini Macros</a>
+             
                 </div>
             </li>
             <!-- #endregion mini-macros -->
@@ -118,62 +128,56 @@
         <ul>
             <li class="waves-effect waves-light">
                 <div id="zendesk">
-                    <a href="#!">
-                        <a href="#!" class="zendesk" title="ZenDesk" data-tippy-theme="foxbit">
-                            <i class="material-icons">
-                                laptop
-                            </i>
-                        </a>
+                    <a class="btn tooltipped" data-position="top" data-tooltip="ZenDesk">
+                        <i class="material-icons">laptop</i>
                     </a>
                 </div>
             </li>
 
             <li class="waves-effect waves-light">
                 <div id="blinktrade">
-                    <a href="#!">
-                        <a href="#" class="blinktrade" title="BlinkTrade">
-                            <i class="material-icons">timeline</i>
-                        </a>
+                    <a class="btn tooltipped" data-position="top" data-tooltip="Blinktrade">
+                        <i class="material-icons">timeline</i>
                     </a>
                 </div>
             </li>
 
             <li class="waves-effect waves-light">
                 <div id="slack">
-                    <a href="#!">
-                        <a href="#" class="slack" title="Slack">
-                            <i class="material-icons">chat</i>
-                        </a>
+                    <a class="btn tooltipped" data-position="top" data-tooltip="Slack">
+                        <i class="material-icons">chat</i>
                     </a>
                 </div>
             </li>
 
             <li class="waves-effect waves-light">
                 <div id="pontomais">
-                    <a href="#!">
-                        <a href="#" class="pontomais" title="PontoMais">
-                            <i class="material-icons">alarm</i>
-                        </a>
+                    <a class="btn tooltipped" data-position="top" data-tooltip="PontoMais">
+                        <i class="material-icons">alarm</i>
                     </a>
                 </div>
             </li>
 
             <li class="waves-effect waves-light">
                 <div id="holerite">
-                    <a href="#!">
-                        <a href="#" class="holerite" title="Holerite">
-                            <i class="material-icons">local_atm</i>
-                        </a>
+                    <a class="btn tooltipped" data-position="top" data-tooltip="Convenia">
+                        <i class="material-icons">local_atm</i>
                     </a>
                 </div>
             </li>
 
             <li class="waves-effect waves-light">
                 <div id="lastpass">
-                    <a href="#!">
-                        <a href="#" class="lastpass" title="LastPass">
-                            <i class="material-icons">lock</i>
-                        </a>
+                    <a class="btn tooltipped" data-position="top" data-tooltip="LastPass">
+                        <i class="material-icons">lock</i>
+                    </a>
+                </div>
+            </li>
+
+            <li class="waves-effect waves-light">
+                <div data-target="modal1" class="modal-trigger">
+                    <a class="btn tooltipped" data-position="top" data-tooltip="Sobre o aplicativo">
+                        <i class="material-icons">info</i>
                     </a>
                 </div>
             </li>
@@ -182,21 +186,39 @@
     <!-- #endregion -->
 
 
-</body>
+    <!-- Estrutura do Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="card-logo center">
+                <a href="#">
+                    <img id="logo-informativo" src="./img/png/foxbit-logo.png">
+                </a>
+            </div>
+            <div class="center-align" style="font-size: 17px">
+                <p>
+                    <strong>Versão do Aplicativo: </strong>
+                    <span id="versão">1.0.0</span>
+                </p>
+                <p>
+                    <strong>Sobre o Aplicativo: </strong>Esse aplicativo foi feito com
+                    <a id="materialize" href="#"> MaterializeCSS</a>
+                    <p>
+                        <strong>Autor: </strong>
+                        <a href="#" id="github">André de Fazzio Posman</a>.</p>
+                    <button id="btnFechar" class="btn-floating waves-effect waves-light red pulse modal-close">
+                        <i class="material-icons">close</i>
+                        <br>
+            </div>
+        </div>
+    </div>
 
-<!-- #region Import dos scripts -->
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-<script>
-      M.AutoInit();
-
-</script>
 
 
+    <!-- #region Import dos scripts -->
 
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 </body>
 
