@@ -36,7 +36,7 @@ const btnBlinkTrade = document.querySelector('#blinktrade')
 const btnSlack = document.querySelector('#slack')
 const btnLastPass = document.querySelector('#lastpass')
 const btnPontoMais = document.querySelector('#pontomais')
-const btnHolerite = document.querySelector('#holerite')
+const btnConvenia = document.querySelector('#holerite')
 //logo
 const logo = document.querySelector('#logo')
 const janelaInformativa = document.querySelector('#janela-informativa')
@@ -106,8 +106,8 @@ btnPontoMais.addEventListener('click', () => {
     window.open('https://app.pontomaisweb.com.br/#/meu_ponto')
 })
 
-btnHolerite.addEventListener('click', () => {
-    window.open('https://office2crm.prosoft.com.br/')
+btnConvenia.addEventListener('click', () => {
+    window.open('https://colaborador.convenia.com.br/painel')
 })
 
 btnLastPass.addEventListener('click', () => {
