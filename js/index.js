@@ -1,4 +1,5 @@
-//inicialização
+
+//#region inicialização do materialize
 document.addEventListener('DOMContentLoaded', function () {
     var dropdownTrigger = document.querySelectorAll('.dropdown-trigger')
     var sidenav = document.querySelectorAll('.sidenav')
@@ -16,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         toolbarEnabled: true
     })
 })
-
-
+//#endregion
 
 
 //#region fazendo a ligação entre os botões no html e js
@@ -36,10 +36,9 @@ const btnBlinkTrade = document.querySelector('#blinktrade')
 const btnSlack = document.querySelector('#slack')
 const btnLastPass = document.querySelector('#lastpass')
 const btnPontoMais = document.querySelector('#pontomais')
-const btnConvenia = document.querySelector('#holerite')
+const btnConvenia = document.querySelector('#convenia')
 //logo
-const logo = document.querySelector('#logo')
-const janelaInformativa = document.querySelector('#janela-informativa')
+const logoIndex = document.querySelector('#logo')
 
 //informativo sobre o aplicativo
 const btnFechar = document.querySelector('#btnFechar')
@@ -50,7 +49,6 @@ const tippy = document.querySelector('#tippy')
 const logoInformativo = document.querySelector('#logo-informativo')
 const appVersao = document.querySelector('#versao')
 //#endregion
-
 
 
 // #region funções que fazem os botões abrirem os links
@@ -114,12 +112,13 @@ btnLastPass.addEventListener('click', () => {
     window.open('https://lastpass.com/?ac=1&lpnorefresh=1&lang=pt')
 })
 
-logo.addEventListener('click', () => {
+logoIndex.addEventListener('click', () => {
     window.open('https://foxbit.com.br')
 })
 //#endregion
 
 
+//#region links do modal de info
 github.addEventListener('click', () => {
     window.open('https://github.com/andreposman')
 })
@@ -131,3 +130,4 @@ materialize.addEventListener('click', () => {
 logoInformativo.addEventListener('click', () => {
     window.open('https://foxbit.com.br')
 })
+//#endregion
