@@ -27,6 +27,7 @@ const btnCaixa = document.querySelector('#btnCaixa')
 const btnBB = document.querySelector('#btnBB')
 const btnInter = document.querySelector('#btnInter')
 const btnOriginal = document.querySelector('#btnOriginal')
+const btnNeon = document.querySelector('#btnNeon')
 const btnEstorno = document.querySelector('#btnEstorno')
 const btnMacro = document.querySelector('#btnMacro')
 
@@ -74,6 +75,10 @@ btnInter.addEventListener('click', () => {
 
 btnOriginal.addEventListener('click', () => {
     window.open('https://drive.google.com/drive/folders/1Hl1TGnFqHkRRUskxjs_a-wOQ9nJQi9kW')
+})
+
+btnNeon.addEventListener('click', () => {
+    window.open('https://drive.google.com/drive/u/1/folders/1TfM_eZ0hA-T3Wd4b9G9uE2una7xWffhB')
 })
 
 btnEstorno.addEventListener('click', () => {
