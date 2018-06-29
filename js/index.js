@@ -30,10 +30,12 @@ const btnOriginal = document.querySelector('#btnOriginal')
 const btnNeon = document.querySelector('#btnNeon')
 const btnEstorno = document.querySelector('#btnEstorno')
 const btnMacro = document.querySelector('#btnMacro')
+const btnFaq = document.querySelector('#btnFaq')
+
 
 //menu-rodape
 const btnZendesk = document.querySelector('#zendesk')
-const btnBlinkTrade = document.querySelector('#blinktrade')
+const btnEmail = document.querySelector('#email')
 const btnSlack = document.querySelector('#slack')
 const btnLastPass = document.querySelector('#lastpass')
 const btnPontoMais = document.querySelector('#pontomais')
@@ -44,11 +46,8 @@ const logoIndex = document.querySelector('#logo')
 //informativo sobre o aplicativo
 const btnFechar = document.querySelector('#btnFechar')
 const github = document.querySelector('#github')
-const electron = document.querySelector('#electron')
 const materialize = document.querySelector('#materialize')
-const tippy = document.querySelector('#tippy')
 const logoInformativo = document.querySelector('#logo-informativo')
-const appVersao = document.querySelector('#versao')
 //#endregion
 
 
@@ -89,6 +88,11 @@ btnMacro.addEventListener('click', () => {
     window.open('https://docs.google.com/document/d/1FvufCszZja4ToeQge096m6sWkaoDQX-UqJc3uvbtWGY/edit')
 })
 
+btnFaq.addEventListener('click', () => {
+    window.open('https://foxbit.zendesk.com/hc/pt-br')
+})
+
+
 //#endregion
 
 
@@ -97,8 +101,8 @@ btnZendesk.addEventListener('click', () => {
     window.open('https://foxbit.zendesk.com/agent/')
 })
 
-btnBlinkTrade.addEventListener('click', () => {
-    window.open('https://blinktrade.com/admin/#/login')
+btnEmail.addEventListener('click', () => {
+    window.open('https://gmail.com')
 })
 
 btnSlack.addEventListener('click', () => {
