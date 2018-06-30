@@ -31,6 +31,7 @@ const btnNeon = document.querySelector('#btnNeon')
 const btnEstorno = document.querySelector('#btnEstorno')
 const btnMacro = document.querySelector('#btnMacro')
 const btnFaq = document.querySelector('#btnFaq')
+const btnDimensionamentoCx = document.querySelector('#btnDimensionamentoCx')
 
 
 //menu-rodape
@@ -92,6 +93,9 @@ btnFaq.addEventListener('click', () => {
     window.open('https://foxbit.zendesk.com/hc/pt-br')
 })
 
+btnDimensionamentoCx.addEventListener('click', () => {
+    window.open('https://docs.google.com/spreadsheets/d/1-gmoNCk0VZubbl6Spj9b6CmJJA5LD_QmkDiHVx0k2Eg/edit#gid=374713126')
+})
 
 //#endregion
 
