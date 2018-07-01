@@ -32,6 +32,8 @@ const btnEstorno = document.querySelector('#btnEstorno')
 const btnMacro = document.querySelector('#btnMacro')
 const btnFaq = document.querySelector('#btnFaq')
 const btnDimensionamentoCx = document.querySelector('#btnDimensionamentoCx')
+const btnQuadroPayments = document.querySelector('#btnQuadroPayments')
+
 
 
 //menu-rodape
@@ -95,6 +97,10 @@ btnFaq.addEventListener('click', () => {
 
 btnDimensionamentoCx.addEventListener('click', () => {
     window.open('https://docs.google.com/spreadsheets/d/1-gmoNCk0VZubbl6Spj9b6CmJJA5LD_QmkDiHVx0k2Eg/edit#gid=374713126')
+})
+
+btnQuadroPayments.addEventListener('click', () => {
+    window.open('https://files.slack.com/files-pri/T0GMBL3TR-FBFL2GFQF/20180626_191726.jpg')
 })
 
 //#endregion
