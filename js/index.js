@@ -33,7 +33,10 @@ const btnMacro = document.querySelector('#btnMacro')
 const btnFaq = document.querySelector('#btnFaq')
 const btnDimensionamentoCx = document.querySelector('#btnDimensionamentoCx')
 const btnQuadroPayments = document.querySelector('#btnQuadroPayments')
-
+const btnContigenciaYoda = document.querySelector('#btnContigenciaYoda')
+const btnYodaAdmin = document.querySelector('#btnYodaAdmin')
+const btnPlanilhaApprover = document.querySelector('#btnPlanilhaApprover')
+const btnYodaApprover = document.querySelector('#btnYodaApprover')
 
 
 //menu-rodape
@@ -101,6 +104,22 @@ btnDimensionamentoCx.addEventListener('click', () => {
 
 btnQuadroPayments.addEventListener('click', () => {
     window.open('https://files.slack.com/files-pri/T0GMBL3TR-FBFL2GFQF/20180626_191726.jpg')
+})
+
+btnContigenciaYoda.addEventListener('click', () => {
+    window.open('https://drive.google.com/drive/u/0/folders/1amIu0kSqdkd3hba-KTiWFyeAV1x2OPMy')
+})
+
+btnYodaAdmin.addEventListener('click', () => {
+    window.open('https://app.foxbit.com.br/admin/#/?_k=d9mnkz')
+})
+
+btnYodaApprover.addEventListener('click', () => {
+    window.open('http://191.232.235.111:8023/#/deposito')
+})
+
+btnPlanilhaApprover.addEventListener('click', () => {
+    window.open('https://drive.google.com/drive/u/0/folders/12QdKwNm6FewQ_-vzDizv9F-SDKb4F9lg')
 })
 
 //#endregion
